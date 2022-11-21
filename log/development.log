@@ -1,0 +1,104 @@
+Started GET "/" for 118.83.63.102 at 2022-11-21 10:48:43 +0000
+Cannot render console from 118.83.63.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant MemosController::Memo):
+  
+app/controllers/memos_controller.rb:4:in `index'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.7.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.7.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.7.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.7.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.7.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.7.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.7.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.7.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.8ms)
+Started GET "/" for 118.83.63.102 at 2022-11-21 10:48:45 +0000
+Cannot render console from 118.83.63.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant MemosController::Memo):
+  
+app/controllers/memos_controller.rb:4:in `index'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.7.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.7.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.7.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.7.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.7.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.7.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.7.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.7.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.4ms)
+  [1m[35m (9.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMemos (20221121104913)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "memos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221121104913"]]
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-11-21 10:49:21.782818"], ["updated_at", "2022-11-21 10:49:21.782818"]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 118.83.63.102 at 2022-11-21 10:49:45 +0000
+Cannot render console from 118.83.63.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 956ms (Views: 948.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/new" for 118.83.63.102 at 2022-11-21 10:49:48 +0000
+Cannot render console from 118.83.63.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for 118.83.63.102 at 2022-11-21 10:49:51 +0000
+Cannot render console from 118.83.63.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9MByIFmsGwuOikS0tOSNb4mHn4hBrUsPwEl7IEo2HHpndcLVOjcdzDo8NuPcrIYHSPOI65XwK93H/94l5CCY/A==", "memos"=>{"title"=>"新規メモ", "body"=>"中身"}, "commit"=>"Create"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.9ms)[0m  [1m[32mINSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "新規メモ"], ["body", "中身"], ["created_at", "2022-11-21 10:49:51.361765"], ["updated_at", "2022-11-21 10:49:51.361765"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://b54bb2060bb942d8986542712341448c.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 20ms (ActiveRecord: 9.8ms)
+
+
+Started GET "/" for 118.83.63.102 at 2022-11-21 10:49:51 +0000
+Cannot render console from 118.83.63.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.2ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 118.83.63.102 at 2022-11-21 10:49:52 +0000
+Cannot render console from 118.83.63.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.2ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  Rendered memos/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/new" for 118.83.63.102 at 2022-11-21 10:49:53 +0000
+Cannot render console from 118.83.63.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+

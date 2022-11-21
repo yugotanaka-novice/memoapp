@@ -1,0 +1,21 @@
+
+
+<div class="container">
+    <div class="card-group">
+        <% @memos.each do |memo| %>
+            <div class="col-sm-4 cardsize">
+                <div class="card-body">
+                    <!--<div class="card-body">-->
+                      <div class="card-header bg-secondary"><%= memo.title %></div>
+                      <div class="card-body">
+                            <%= memo.body %>
+                      </div>
+                    <!--</div>-->
+                </div>
+            </div>
+        <% end %>
+    </div>
+
+
+    <a href="/new" class="btn btn-primary">create memo</a>
+</div>
