@@ -1,12 +1,20 @@
 
 
 <div class="container">
+    <h3>ALL Memo List</h3>
     <div class="card-group">
         <% @memos.each do |memo| %>
             <div class="col-sm-4 cardsize">
                 <div class="card-body">
                     <!--<div class="card-body">-->
-                      <div class="card-header bg-secondary"><%= memo.title %></div>
+                      <div class="card-header bg-secondary">
+                          <h4><%= memo.title %> </h4>
+                          <p><%= memo.category.name %></p>
+                          <div class="buttons">
+                              <a href="/memos/<%= memo.id %>" data-method="delete"><i class="bi bi-trash"></i></a>
+                              <a href="/memos/<%= memo.id %>/edit" ><i class="bi bi-pencil-square"></i></a>
+                          </div>
+                      </div>
                       <div class="card-body">
                             <%= memo.body %>
                       </div>
